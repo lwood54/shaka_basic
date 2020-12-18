@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Shaka Player compiled library: -->
+    <script src="/shaka-player/dist/shaka-player.compiled.debug.js"></script>
+    <script src="/shaka-player/dist/shaka-player.ui.js"></script>
+    <!-- Your application source: -->
+    <script src="myapp.js"></script>
+  </head>
+  <body>
+    <video id="video"
+           width="640"
+           poster="//shaka-player-demo.appspot.com/assets/poster.jpg"
+           controls autoplay></video>
+           <div data-shaka-player-container style="max-width:40em"
+         data-shaka-player-cast-receiver-id="930DEB06">
+       <!-- The data-shaka-player tag will make the UI library use this video element.
+            If no video is provided, the UI will automatically make one inside the container div. -->
+      <video autoplay data-shaka-player id="video" style="width:100%;height:100%"></video>
+  </body>
+</html>
